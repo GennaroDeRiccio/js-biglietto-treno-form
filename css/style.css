@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    height: 200px;
+    background-image: url(https://cdn.britannica.com/28/233928-050-CC617C2B/high-speed-railway-commuter-train.jpg);
+    background-size: cover;
+}
+
+#output {
+    padding-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#output p {
+    padding-top: 20px;
+    font-size: 30px;
+}
+

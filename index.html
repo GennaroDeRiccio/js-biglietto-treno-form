@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Biglietto treno</title>
+  </head>
+  <body>
+    <header class="mt-4">
+    <h1 class="text-center">Calcola il prezzo del tuo biglietto</h1>
+</header>
+    <div class="container text-center m-5">
+      <div class="row">
+        <form class="col-6">
+          <div class="mb-3">
+            <label class="form-label">Numero chilometri</label>
+            <input type="number" class="form-control text-center" id="num_km" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Età del passeggero</label>
+            <input type="number" class="form-control text-center" id="eta" />
+          </div>
+          <div class="button">
+          <button class="btn btn-primary" id="btn-invio">Invio</button>
+          </div>
+        </form>
+        <div id="output" class="col-6">
+          <p id="sconto"></p>
+          <p id="prezzo"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
