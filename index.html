@@ -20,6 +20,11 @@
       <div class="row">
         <form class="col-6">
           <div class="mb-3">
+            <h3>Calcola il prezzo del tuo biglietto</h3>
+            <label class="form-label">Nome e Cognome</label>
+            <input type="text" class="form-control text-center" id="name" />
+          </div>
+          <div class="mb-3">
             <label class="form-label">Numero chilometri</label>
             <input type="number" class="form-control text-center" id="num_km" />
           </div>
@@ -32,6 +37,8 @@
           </div>
         </form>
         <div id="output" class="col-6">
+          <h3>Il tuo biglietto</h3>
+          <p id="passeggero"> </p>
           <p id="sconto"></p>
           <p id="prezzo"></p>
         </div>

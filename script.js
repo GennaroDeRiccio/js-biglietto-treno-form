@@ -1,10 +1,13 @@
 // Es. Biglietto treno
 
+let nome = document.getElementById("name");
 let conferma = document.getElementById("btn-invio");
 let num_km = document.getElementById("num_km");
 let eta = document.getElementById("eta");
 
 let form = document.querySelector("form");
+
+ nome_passeggero = document.getElementById("passeggero");
 
 form.addEventListener("submit", function () {
   event.preventDefault();
@@ -21,6 +24,7 @@ form.addEventListener("submit", function () {
     document.getElementById("sconto").innerHTML =
       "Hai ottenuto uno sconto del 40%";
   }
-
+  nome_passeggero = nome;
+  passeggero.innerText = "Passeggero: " + nome_passeggero.value;
   document.getElementById("prezzo").innerHTML = "Il prezzo è: " + prezzo.toFixed(2) + "€";
 });
